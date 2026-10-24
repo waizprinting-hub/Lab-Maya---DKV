@@ -95,5 +95,60 @@ function openSubject(id){const s=subjects.find(x=>x.id===id);if(!s)return;docume
 function showToast(msg){const el=document.getElementById('toast');el.textContent=msg;el.classList.add('show');setTimeout(()=>el.classList.remove('show'),2300)}
 document.getElementById('searchInput').addEventListener('input',renderSubjects);document.getElementById('filterSelect').addEventListener('change',renderSubjects);document.getElementById('closeModal').addEventListener('click',()=>document.getElementById('modalBackdrop').classList.remove('open'));document.getElementById('modalBackdrop').addEventListener('click',e=>{if(e.target.id==='modalBackdrop')e.currentTarget.classList.remove('open')});document.getElementById('dashboardBtn').addEventListener('click',()=>document.getElementById('dashboard').scrollIntoView({behavior:'smooth'}));document.getElementById('resetBtn').addEventListener('click',()=>{if(confirm('Reset semua progres demo pada browser ini?')){state={done:[]};save();renderSubjects();showToast('Progres demo direset.')}});renderSubjects();renderTasks();renderStats();
 </script>
+  <!-- LAB MAYA DKV: AREA MATERI PEMBELAJARAN -->
+<section id="materi-dkv" style="padding:32px 20px;max-width:1100px;margin:auto;">
+  <h2>Materi Pembelajaran DKV</h2>
+  <p>Pilih mata pelajaran untuk melihat daftar materi pembelajaran.</p>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;">
+
+    <article style="padding:20px;border:1px solid #ddd;border-radius:12px;">
+      <h3>Desain Media Interaktif</h3>
+      <ul>
+        <li>Prinsip desain antarmuka</li>
+        <li>Grid dan tata letak</li>
+        <li>UI/UX dan prototipe</li>
+      </ul>
+    </article>
+
+    <article style="padding:20px;border:1px solid #ddd;border-radius:12px;">
+      <h3>Pengolahan Audio Video</h3>
+      <ul>
+        <li>Teknik pengambilan video</li>
+        <li>Editing video dan audio</li>
+        <li>Film pendek dan storyboard</li>
+      </ul>
+    </article>
+
+    <article style="padding:20px;border:1px solid #ddd;border-radius:12px;">
+      <h3>Teknik Fotografi</h3>
+      <ul>
+        <li>Segitiga eksposur</li>
+        <li>Komposisi fotografi</li>
+        <li>Pencahayaan dan praktik foto</li>
+      </ul>
+    </article>
+
+    <article style="padding:20px;border:1px solid #ddd;border-radius:12px;">
+      <h3>Animasi 2D/3D</h3>
+      <ul>
+        <li>12 prinsip animasi</li>
+        <li>Storyboard dan animasi 2D</li>
+        <li>Pemodelan dan animasi 3D</li>
+      </ul>
+    </article>
+
+    <article style="padding:20px;border:1px solid #ddd;border-radius:12px;">
+      <h3>Produksi Desain Percetakan dan Periklanan</h3>
+      <ul>
+        <li>Desain media promosi</li>
+        <li>Layout dan tipografi</li>
+        <li>Prepress dan persiapan cetak</li>
+      </ul>
+    </article>
+
+  </div>
+</section>
+<!-- AKHIR AREA MATERI PEMBELAJARAN -->
 </body>
 </html>
