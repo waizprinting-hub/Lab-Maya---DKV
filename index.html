@@ -104,6 +104,23 @@ document.getElementById('searchInput').addEventListener('input',renderSubjects);
 
     <article style="padding:20px;border:1px solid #ddd;border-radius:12px;">
       <h3>Desain Media Interaktif</h3>
+      <button type="button"
+  onclick="document.getElementById('materi-detail-interaktif').hidden = !document.getElementById('materi-detail-interaktif').hidden">
+  Lihat Materi
+</button>
+
+<div id="materi-detail-interaktif" hidden
+  style="margin-top:12px;padding:14px;background:#f3f6fb;border-radius:8px;color:#222;">
+  <h4>Materi 1: Dasar Desain Media Interaktif</h4>
+  <p><strong>Tujuan:</strong> Siswa mampu memahami dasar perancangan media interaktif.</p>
+  <p><strong>Pokok materi:</strong></p>
+  <ul>
+    <li>Pengertian media interaktif</li>
+    <li>Prinsip desain antarmuka</li>
+    <li>Hierarki visual dan navigasi</li>
+  </ul>
+  <p><strong>Latihan:</strong> Buat sketsa tampilan halaman utama aplikasi edukasi dengan minimal tiga menu navigasi.</p>
+</div>
       <ul>
         <li>Prinsip desain antarmuka</li>
         <li>Grid dan tata letak</li>
